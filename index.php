@@ -4,7 +4,7 @@ requireLogin();
 
 $db = getDB();
 $user = getCurrentUser();
-
+//AKUMA TAMASHI
 // Stats del usuario
 $apuestas = $db->prepare("SELECT COUNT(*) as total, 
     SUM(CASE WHEN estado='ganada' THEN 1 ELSE 0 END) as ganadas,
